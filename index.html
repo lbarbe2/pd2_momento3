@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juguetería de Sid</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="splide.min.css">
+</head>
+
+<body class="contenedor">
+
+
+<header class="header"> La Juguetería de  <span class="header_sid-title"> SID </span> </header>
+<nav class="navbar"> 
+ 		<ul>
+ 			<li> <a class="juguetes" href="#">Juguetes</a>	</li> <!-- . --> <li> <a class="jugueteria" href="#">Juguetería</a> </li> <!-- . -->	<li> <a class="sobremi" href="#">Sobre mí</a>	</li>
+ 		</ul>
+ 		</div>	
+</nav>
+
+<article class="article"> 
+  <div class="article-contenedor1">
+  <div class="article_subtitle1"> <span class="permanentmarker">¡Muajajaja! ¡Bienvenido a mi taller de <span class="color_rojo">juguetes modificados</span>! Soy  <span class="color_rojo">SID</span>, el mejor villano de <span class="color_verde-oscuro">Toy Story</span>. <br> Échale un vistazo a mis creaciones... ¡si te atreves!</span></div>
+ 	<div class="article_subtitle1-image"> <img src="img/sid-phillips_carcajada.png"></div>
+ 	<a class="ver_juguetes" href="#"> <div class="ver_juguetes"> Ver juguetes </div> </a>
+  </div>
+
+	<div class="article_subtitle1-line"></div>
+
+	<div class="article_subtitle2"> ¡Juguetes <span class="color_rojo">terroríficos!</span> </div>
+
+
+	<!-- Splide -->
+	<style type="text/css">
+	.splide{margin-bottom: 50px;}
+	.splide img{width: 100%;}	
+	</style>
+
+	<div class="splide">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide"> <img src="img/slide_juguetes-sid.jpg"></li>
+			<li class="splide__slide"><img src="img/slide_juguetes-sid2.jpg"></li>
+			<li class="splide__slide"><img src="img/sid_operando.jpg"></li>
+		</ul>
+  </div>
+	</div>
+
+	<script src="js/splide.min.js"></script>
+
+	<script>
+	var splide = new Splide( '.splide', {
+  type   : 'loop',
+  padding: '5rem',
+	} );
+
+	splide.mount();
+	</script>
+	<!-- Fin de Splide -->
+</article>
+
+<footer class="footer"> 
+	<div class="footer-contenedor">
+
+<div class="toystory-logo">	<img src="img/toystory-logo.png"> </div>
+<div class="nombre"> <a href="#"> Lucas Barbero </a> </div>
+<div class="logo-up">	<img src="img/logo-up.png"> </div>
+
+</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Permanent+Marker&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	max-width: 1500px;
+	color: #fff;
+	background-color: #052517;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 100%;
+	font-size: 2em;
+}
+
+header{
+	background-image: url(img/header_skulls-background.gif);
+}
+
+nav{
+	background-color: #121431;
+	border-top: 2px solid #ff0000;
+	border-bottom: 2px solid #ff0000;
+}
+
+article{
+	background-color: #000000;
+}
+
+aside{
+	background-color: #ff9999;
+}
+
+footer{
+	background-color: #121431;
+	border-top: 2px solid #ff0000;
+}
+
+/*Areas*/
+.contenedor .header{grid-area: header;}
+.contenedor .navbar{grid-area: navbar;}
+.contenedor .article{grid-area: article;}
+.contenedor .footer{grid-area: footer;}
+/*Fin de Areas*/
+
+
+/*Colores*/
+.color_rojo{
+	color: #ff0000;
+}
+
+.color_verde-oscuro{
+	color: #44dd00;
+}
+/*Fin de Colores*/
+
+/*Font Family*/
+.permanentmarker{
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 2px;
+}
+
+
+
+
+/*]]]]] MEDIA 1000px (Laptop - PC) [[[[[*/
+
+@media(min-width: 1000px) {
+
+
+
+/*-----------CONTENEDOR-----------*/
+
+.contenedor{
+	width: 100%;
+	margin: auto;
+
+	display: grid;
+
+	grid-template: 
+	"header header header" 120px
+	"navbar navbar navbar" 60px
+	"article article article" auto
+	"footer footer footer" 80px /
+	1fr 1fr 1fr;
+}
+
+/*----------FIN DE CONTENEDOR----------*/
+
+
+/*HEADER*/
+.header{
+	color: #fff;
+	text-align: center;
+	padding-top: auto;
+	padding-bottom: 6px;
+	font-size: 70px;
+	font-family: 'Anton', sans-serif;
+	text-shadow: 5px 5px 1px #000;
+}
+
+.header_sid-title{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 80px;
+	color: #e60026;
+}
+
+/*NAV*/
+.navbar{
+	text-align: center;
+	padding-top: 5px;
+}
+
+.navbar li{
+	display: inline;
+}
+
+.navbar li a{
+	font-size: 26px;
+	font-family: 'Anton', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.juguetes:hover{
+	color: #ff0000;
+}
+
+.jugueteria:hover{
+	color: #ff0000;
+}
+
+.sobremi:hover{
+	color: #ff0000;
+}
+
+
+/*ARTICLE*/
+
+.article-contenedor1{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+
+	display: grid;
+
+	grid-template: 
+	"art_sub1 art_sub1-img" auto
+	 "ver_jug art_sub1-img" auto /
+	55% 25%;
+
+	grid-column-gap: 40px;
+}
+
+.article_subtitle1{
+	background-color: #ffffff;
+	color: #000000;
+	height: 210px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: auto;
+	text-align: center;
+	font-size: 26px;
+	font-weight: 700;
+	grid-area: art_sub1;
+	border: 4px solid #000000;
+	box-shadow: 5px 5px 5px #ff0000;
+	border-radius: 20px;
+}
+
+.article_subtitle1-image{
+	grid-area: art_sub1-img;
+}
+
+.article_subtitle1-image img{
+	height: 400px;
+
+}
+
+.article_subtitle1-line{
+width: 95%;
+height: 2px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 20px;
+background-color: red;
+}
+
+.article_subtitle2{
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ver_juguetes{
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+}
+
+.ver_juguetes div{
+	background-color: #ff0000;
+	font-family: 'Anton', sans-serif;
+  	border: none;
+  	color: #eeeeee;
+  	padding: 15px 32px;
+ 	text-align: center;
+  	font-size: 26px;
+  	grid-area: ver_jug;
+  	border-radius: 18px;
+  	letter-spacing: 1px;
+}
+
+
+/*FOOTER*/
+
+.footer-contenedor{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: grid;
+
+	grid-template: 
+	"toystory nombre up" auto /
+	15% 70% 15%;
+}
+
+.toystory-logo{
+	grid-area: toystory;
+	margin-left: 20px;
+}
+
+.toystory-logo img{
+	height: 65px;
+	margin-top: 5px;
+}
+
+.nombre{
+	grid-area: nombre;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.nombre a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.logo-up{
+	grid-area: up;
+}
+
+.logo-up img{
+	margin-top: 8px;
+	margin-left: 80px;
+	height: 60px;
+}
+
+
+}
